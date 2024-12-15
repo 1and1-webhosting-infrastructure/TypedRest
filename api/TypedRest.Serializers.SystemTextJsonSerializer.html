@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SystemTextJsonSerializer | TypedRest for .NET </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SystemTextJsonSerializer | TypedRest for .NET ">
+      
+      <meta name="description" content="Handles serializing/deserializing from/to JSON using . Uses camel-case naming and does not serialize null by default. NuGet: TypedRest.SystemTextJson">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/TypedRest/TypedRest-DotNet/new/1.6.0/apiSpec/new?filename=TypedRest_Serializers_SystemTextJsonSerializer.md&amp;value=---%0Auid%3A%20TypedRest.Serializers.SystemTextJsonSerializer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TypedRest.Serializers.SystemTextJsonSerializer">
+
+
+
+  <h1 id="TypedRest_Serializers_SystemTextJsonSerializer" data-uid="TypedRest.Serializers.SystemTextJsonSerializer" class="text-break">
+Class SystemTextJsonSerializer  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest.SystemTextJson/Serializers/SystemTextJsonSerializer.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TypedRest.html">TypedRest</a>.<a class="xref" href="TypedRest.Serializers.html">Serializers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TypedRest.SystemTextJson.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Handles serializing/deserializing from/to JSON using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system">System.Text.Json</a>.
+Uses camel-case naming and does not serialize <code>null</code> by default.</p>
+<p><strong>NuGet:</strong> <a href="https://www.nuget.org/packages/TypedRest.SystemTextJson/">TypedRest.SystemTextJson</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SystemTextJsonSerializer : MediaTypeFormatter</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter">MediaTypeFormatter</a></div>
+      <div><span class="xref">SystemTextJsonSerializer</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter.selectcharacterencoding">MediaTypeFormatter.SelectCharacterEncoding(HttpContentHeaders)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter.setdefaultcontentheaders">MediaTypeFormatter.SetDefaultContentHeaders(Type, HttpContentHeaders, MediaTypeHeaderValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter.getperrequestformatterinstance">MediaTypeFormatter.GetPerRequestFormatterInstance(Type, HttpRequestMessage, MediaTypeHeaderValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter.getdefaultvaluefortype">MediaTypeFormatter.GetDefaultValueForType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter.maxhttpcollectionkeys">MediaTypeFormatter.MaxHttpCollectionKeys</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter.supportedmediatypes">MediaTypeFormatter.SupportedMediaTypes</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter.supportedencodings">MediaTypeFormatter.SupportedEncodings</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter.mediatypemappings">MediaTypeFormatter.MediaTypeMappings</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter.requiredmemberselector">MediaTypeFormatter.RequiredMemberSelector</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TypedRest_Serializers_SystemTextJsonSerializer__ctor_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.#ctor*"></a>
+
+  <h3 id="TypedRest_Serializers_SystemTextJsonSerializer__ctor" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.#ctor">
+  SystemTextJsonSerializer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest.SystemTextJson/Serializers/SystemTextJsonSerializer.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SystemTextJsonSerializer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TypedRest_Serializers_SystemTextJsonSerializer_Options_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.Options*"></a>
+
+  <h3 id="TypedRest_Serializers_SystemTextJsonSerializer_Options" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.Options">
+  Options
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest.SystemTextJson/Serializers/SystemTextJsonSerializer.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializer options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerOptions Options { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TypedRest_Serializers_SystemTextJsonSerializer_CanReadType_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.CanReadType*"></a>
+
+  <h3 id="TypedRest_Serializers_SystemTextJsonSerializer_CanReadType_System_Type_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.CanReadType(System.Type)">
+  CanReadType(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest.SystemTextJson/Serializers/SystemTextJsonSerializer.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Queries whether this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter">MediaTypeFormatter</a> can deserializean object of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanReadType(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type to deserialize.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter">MediaTypeFormatter</a> can deserialize the type; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TypedRest_Serializers_SystemTextJsonSerializer_CanWriteType_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.CanWriteType*"></a>
+
+  <h3 id="TypedRest_Serializers_SystemTextJsonSerializer_CanWriteType_System_Type_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.CanWriteType(System.Type)">
+  CanWriteType(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest.SystemTextJson/Serializers/SystemTextJsonSerializer.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Queries whether this <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter">MediaTypeFormatter</a> can serializean object of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanWriteType(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type to serialize.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.mediatypeformatter">MediaTypeFormatter</a> can serialize the type; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TypedRest_Serializers_SystemTextJsonSerializer_ReadFromStreamAsync_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.ReadFromStreamAsync*"></a>
+
+  <h3 id="TypedRest_Serializers_SystemTextJsonSerializer_ReadFromStreamAsync_System_Type_System_IO_Stream_System_Net_Http_HttpContent_System_Net_Http_Formatting_IFormatterLogger_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.ReadFromStreamAsync(System.Type,System.IO.Stream,System.Net.Http.HttpContent,System.Net.Http.Formatting.IFormatterLogger)">
+  ReadFromStreamAsync(Type, Stream, HttpContent, IFormatterLogger)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest.SystemTextJson/Serializers/SystemTextJsonSerializer.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously deserializes an object of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;object?&gt; ReadFromStreamAsync(Type type, Stream readStream, HttpContent content, IFormatterLogger formatterLogger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type of the object to deserialize.</p>
+</dd>
+    <dt><code>readStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> to read.</p>
+</dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent">HttpContent</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent">HttpContent</a>, if available. It may be null.</p>
+</dd>
+    <dt><code>formatterLogger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.iformatterlogger">IFormatterLogger</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.iformatterlogger">IFormatterLogger</a> to log events to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> whose result will be an object of the given type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>Derived types need to support reading.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="TypedRest_Serializers_SystemTextJsonSerializer_ReadFromStreamAsync_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.ReadFromStreamAsync*"></a>
+
+  <h3 id="TypedRest_Serializers_SystemTextJsonSerializer_ReadFromStreamAsync_System_Type_System_IO_Stream_System_Net_Http_HttpContent_System_Net_Http_Formatting_IFormatterLogger_System_Threading_CancellationToken_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.ReadFromStreamAsync(System.Type,System.IO.Stream,System.Net.Http.HttpContent,System.Net.Http.Formatting.IFormatterLogger,System.Threading.CancellationToken)">
+  ReadFromStreamAsync(Type, Stream, HttpContent, IFormatterLogger, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest.SystemTextJson/Serializers/SystemTextJsonSerializer.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously deserializes an object of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;object?&gt; ReadFromStreamAsync(Type type, Stream readStream, HttpContent content, IFormatterLogger formatterLogger, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type of the object to deserialize.</p>
+</dd>
+    <dt><code>readStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> to read.</p>
+</dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent">HttpContent</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent">HttpContent</a>, if available. It may be null.</p>
+</dd>
+    <dt><code>formatterLogger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.iformatterlogger">IFormatterLogger</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.formatting.iformatterlogger">IFormatterLogger</a> to log events to.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> whose result will be an object of the given type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TypedRest_Serializers_SystemTextJsonSerializer_WriteToStreamAsync_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.WriteToStreamAsync*"></a>
+
+  <h3 id="TypedRest_Serializers_SystemTextJsonSerializer_WriteToStreamAsync_System_Type_System_Object_System_IO_Stream_System_Net_Http_HttpContent_System_Net_TransportContext_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.WriteToStreamAsync(System.Type,System.Object,System.IO.Stream,System.Net.Http.HttpContent,System.Net.TransportContext)">
+  WriteToStreamAsync(Type, object, Stream, HttpContent, TransportContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest.SystemTextJson/Serializers/SystemTextJsonSerializer.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously writes an object of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task WriteToStreamAsync(Type type, object value, Stream writeStream, HttpContent content, TransportContext transportContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type of the object to write.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object value to write.  It may be null.</p>
+</dd>
+    <dt><code>writeStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> to which to write.</p>
+</dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent">HttpContent</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent">HttpContent</a> if available. It may be null.</p>
+</dd>
+    <dt><code>transportContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.transportcontext">TransportContext</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.transportcontext">TransportContext</a> if available. It may be null.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that will perform the write.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>Derived types need to support writing.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="TypedRest_Serializers_SystemTextJsonSerializer_WriteToStreamAsync_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.WriteToStreamAsync*"></a>
+
+  <h3 id="TypedRest_Serializers_SystemTextJsonSerializer_WriteToStreamAsync_System_Type_System_Object_System_IO_Stream_System_Net_Http_HttpContent_System_Net_TransportContext_System_Threading_CancellationToken_" data-uid="TypedRest.Serializers.SystemTextJsonSerializer.WriteToStreamAsync(System.Type,System.Object,System.IO.Stream,System.Net.Http.HttpContent,System.Net.TransportContext,System.Threading.CancellationToken)">
+  WriteToStreamAsync(Type, object, Stream, HttpContent, TransportContext, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest.SystemTextJson/Serializers/SystemTextJsonSerializer.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously writes an object of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task WriteToStreamAsync(Type type, object value, Stream writeStream, HttpContent content, TransportContext transportContext, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type of the object to write.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object value to write.  It may be null.</p>
+</dd>
+    <dt><code>writeStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> to which to write.</p>
+</dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent">HttpContent</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent">HttpContent</a> if available. It may be null.</p>
+</dd>
+    <dt><code>transportContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.transportcontext">TransportContext</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.transportcontext">TransportContext</a> if available. It may be null.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that will perform the write.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>Derived types need to support writing.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest.SystemTextJson/Serializers/SystemTextJsonSerializer.cs/#L13" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright Bastian Eicher
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ICollectionEndpoint&lt;TEntity, TElementEndpoint&gt; | TypedRest for .NET </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ICollectionEndpoint&lt;TEntity, TElementEndpoint&gt; | TypedRest for .NET ">
+      
+      <meta name="description" content="Endpoint for a collection of TEntitys addressable as TElementEndpoints.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/TypedRest/TypedRest-DotNet/new/1.6.0/apiSpec/new?filename=TypedRest_Endpoints_Generic_ICollectionEndpoint_2.md&amp;value=---%0Auid%3A%20TypedRest.Endpoints.Generic.ICollectionEndpoint%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2">
+
+
+
+  <h1 id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2" class="text-break">
+Interface ICollectionEndpoint&lt;TEntity, TElementEndpoint&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest/Endpoints/Generic/ICollectionEndpoint.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TypedRest.html">TypedRest</a>.<a class="xref" href="TypedRest.Endpoints.html">Endpoints</a>.<a class="xref" href="TypedRest.Endpoints.Generic.html">Generic</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TypedRest.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Endpoint for a collection of <code class="typeparamref">TEntity</code>s addressable as <code class="typeparamref">TElementEndpoint</code>s.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ICollectionEndpoint&lt;TEntity, out TElementEndpoint&gt; : IIndexerEndpoint&lt;TElementEndpoint&gt;, IEndpoint where TEntity : class where TElementEndpoint : IElementEndpoint&lt;TEntity&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd><p>The type of individual elements in the collection.</p>
+</dd>
+    <dt><code>TElementEndpoint</code></dt>
+    <dd><p>The type of <a class="xref" href="TypedRest.Endpoints.Generic.IElementEndpoint-1.html">IElementEndpoint&lt;TEntity&gt;</a> to provide for individual <code class="typeparamref">TEntity</code>s.</p>
+</dd>
+  </dl>
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TypedRest.Endpoints.Generic.IIndexerEndpoint-1.html#TypedRest_Endpoints_Generic_IIndexerEndpoint_1_Item_System_String_">IIndexerEndpoint&lt;TElementEndpoint&gt;.this[string]</a>
+    </div>
+    <div>
+      <a class="xref" href="TypedRest.Endpoints.IEndpoint.html#TypedRest_Endpoints_IEndpoint_Uri">IEndpoint.Uri</a>
+    </div>
+    <div>
+      <a class="xref" href="TypedRest.Endpoints.IEndpoint.html#TypedRest_Endpoints_IEndpoint_HttpClient">IEndpoint.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="TypedRest.Endpoints.IEndpoint.html#TypedRest_Endpoints_IEndpoint_Serializers">IEndpoint.Serializers</a>
+    </div>
+    <div>
+      <a class="xref" href="TypedRest.Endpoints.IEndpoint.html#TypedRest_Endpoints_IEndpoint_ErrorHandler">IEndpoint.ErrorHandler</a>
+    </div>
+    <div>
+      <a class="xref" href="TypedRest.Endpoints.IEndpoint.html#TypedRest_Endpoints_IEndpoint_LinkExtractor">IEndpoint.LinkExtractor</a>
+    </div>
+    <div>
+      <a class="xref" href="TypedRest.Endpoints.IEndpoint.html#TypedRest_Endpoints_IEndpoint_GetLinks_System_String_">IEndpoint.GetLinks(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TypedRest.Endpoints.IEndpoint.html#TypedRest_Endpoints_IEndpoint_Link_System_String_">IEndpoint.Link(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TypedRest.Endpoints.IEndpoint.html#TypedRest_Endpoints_IEndpoint_LinkTemplate_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__">IEndpoint.LinkTemplate(string, IDictionary&lt;string, object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TypedRest.Endpoints.IEndpoint.html#TypedRest_Endpoints_IEndpoint_LinkTemplate_System_String_System_Object_">IEndpoint.LinkTemplate(string, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="TypedRest.Endpoints.Generic.CollectionEndpointExtensions.html#TypedRest_Endpoints_Generic_CollectionEndpointExtensions_ContainsAsync__2_TypedRest_Endpoints_Generic_ICollectionEndpoint___0___1____0_System_Threading_CancellationToken_">CollectionEndpointExtensions.ContainsAsync&lt;TEntity, TElementEndpoint&gt;(ICollectionEndpoint&lt;TEntity, TElementEndpoint&gt;, TEntity, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="TypedRest.Endpoints.Generic.CollectionEndpointExtensions.html#TypedRest_Endpoints_Generic_CollectionEndpointExtensions_DeleteAsync__2_TypedRest_Endpoints_Generic_ICollectionEndpoint___0___1____0_System_Threading_CancellationToken_">CollectionEndpointExtensions.DeleteAsync&lt;TEntity, TElementEndpoint&gt;(ICollectionEndpoint&lt;TEntity, TElementEndpoint&gt;, TEntity, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="TypedRest.Endpoints.Generic.CollectionEndpointExtensions.html#TypedRest_Endpoints_Generic_CollectionEndpointExtensions_MergeAsync__2_TypedRest_Endpoints_Generic_ICollectionEndpoint___0___1____0_System_Threading_CancellationToken_">CollectionEndpointExtensions.MergeAsync&lt;TEntity, TElementEndpoint&gt;(ICollectionEndpoint&lt;TEntity, TElementEndpoint&gt;, TEntity, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="TypedRest.Endpoints.Generic.CollectionEndpointExtensions.html#TypedRest_Endpoints_Generic_CollectionEndpointExtensions_SetAsync__2_TypedRest_Endpoints_Generic_ICollectionEndpoint___0___1____0_System_Threading_CancellationToken_">CollectionEndpointExtensions.SetAsync&lt;TEntity, TElementEndpoint&gt;(ICollectionEndpoint&lt;TEntity, TElementEndpoint&gt;, TEntity, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="TypedRest.Endpoints.Generic.CollectionEndpointExtensions.html#TypedRest_Endpoints_Generic_CollectionEndpointExtensions_ContainsAsync__1_TypedRest_Endpoints_Generic_IIndexerEndpoint___0__System_String_System_Threading_CancellationToken_">CollectionEndpointExtensions.ContainsAsync&lt;TElementEndpoint&gt;(IIndexerEndpoint&lt;TElementEndpoint&gt;, string, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="TypedRest.Endpoints.Generic.CollectionEndpointExtensions.html#TypedRest_Endpoints_Generic_CollectionEndpointExtensions_DeleteAsync__1_TypedRest_Endpoints_Generic_IIndexerEndpoint___0__System_String_System_Threading_CancellationToken_">CollectionEndpointExtensions.DeleteAsync&lt;TElementEndpoint&gt;(IIndexerEndpoint&lt;TElementEndpoint&gt;, string, CancellationToken)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Use the more constrained <a class="xref" href="TypedRest.Endpoints.Generic.ICollectionEndpoint-1.html">ICollectionEndpoint&lt;TEntity&gt;</a> when possible.</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_CreateAllAllowed_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.CreateAllAllowed*"></a>
+
+  <h3 id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_CreateAllAllowed" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.CreateAllAllowed">
+  CreateAllAllowed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest/Endpoints/Generic/ICollectionEndpoint.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the server has specified <a class="xref" href="TypedRest.Endpoints.Generic.ICollectionEndpoint-2.html#TypedRest_Endpoints_Generic_ICollectionEndpoint_2_CreateAllAllowed">CreateAllAllowed</a> is currently allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool? CreateAllAllowed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>An indicator whether the verb is allowed. If no request has been sent yet or the server did not specify allowed verbs <code>null</code> is returned.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_CreateAllAllowed_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Uses cached data from last response.</p>
+</div>
+
+
+
+
+  <a id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_CreateAllowed_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.CreateAllowed*"></a>
+
+  <h3 id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_CreateAllowed" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.CreateAllowed">
+  CreateAllowed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest/Endpoints/Generic/ICollectionEndpoint.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the server has specified <a class="xref" href="TypedRest.Endpoints.Generic.ICollectionEndpoint-2.html#TypedRest_Endpoints_Generic_ICollectionEndpoint_2_CreateAsync__0_System_Threading_CancellationToken_">CreateAsync(TEntity, CancellationToken)</a> is currently allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool? CreateAllowed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p><code>true</code> if the method is allowed, <code>false</code> if the method is not allowed, <code>null</code> If no request has been sent yet or the server did not specify allowed methods.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_CreateAllowed_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Uses cached data from last response.</p>
+</div>
+
+
+
+
+  <a id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_Item_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.Item*"></a>
+
+  <h3 id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_Item__0_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.Item(`0)">
+  this[TEntity]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest/Endpoints/Generic/ICollectionEndpoint.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an <a class="xref" href="TypedRest.Endpoints.Generic.ElementEndpoint-1.html">ElementEndpoint&lt;TEntity&gt;</a> for a specific child element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TElementEndpoint this[TEntity entity] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <span class="xref">TEntity</span></dt>
+    <dd><p>An existing entity to extract the ID from.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TElementEndpoint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_ReadAllAllowed_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.ReadAllAllowed*"></a>
+
+  <h3 id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_ReadAllAllowed" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.ReadAllAllowed">
+  ReadAllAllowed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest/Endpoints/Generic/ICollectionEndpoint.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the server has specified <a class="xref" href="TypedRest.Endpoints.Generic.ICollectionEndpoint-2.html#TypedRest_Endpoints_Generic_ICollectionEndpoint_2_ReadAllAsync_System_Threading_CancellationToken_">ReadAllAsync(CancellationToken)</a> is currently allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool? ReadAllAllowed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p><code>true</code> if the method is allowed, <code>false</code> if the method is not allowed, <code>null</code> If no request has been sent yet or the server did not specify allowed methods.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_ReadAllAllowed_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Uses cached data from last response.</p>
+</div>
+
+
+
+
+  <a id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_ReadRangeAllowed_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.ReadRangeAllowed*"></a>
+
+  <h3 id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_ReadRangeAllowed" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.ReadRangeAllowed">
+  ReadRangeAllowed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest/Endpoints/Generic/ICollectionEndpoint.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the server has specified <a class="xref" href="TypedRest.Endpoints.Generic.ICollectionEndpoint-2.html#TypedRest_Endpoints_Generic_ICollectionEndpoint_2_ReadRangeAsync_System_Net_Http_Headers_RangeItemHeaderValue_System_Threading_CancellationToken_">ReadRangeAsync(RangeItemHeaderValue, CancellationToken)</a> is allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool? ReadRangeAllowed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>An indicator whether the method is allowed. If no request has been sent yet.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_ReadRangeAllowed_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Uses cached data from last response.</p>
+</div>
+
+
+
+
+  <a id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_SetAllAllowed_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.SetAllAllowed*"></a>
+
+  <h3 id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_SetAllAllowed" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.SetAllAllowed">
+  SetAllAllowed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest/Endpoints/Generic/ICollectionEndpoint.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the server has specified <a class="xref" href="TypedRest.Endpoints.Generic.ICollectionEndpoint-2.html#TypedRest_Endpoints_Generic_ICollectionEndpoint_2_SetAllAllowed">SetAllAllowed</a> is currently allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool? SetAllAllowed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>An indicator whether the verb is allowed. If no request has been sent yet or the server did not specify allowed verbs <code>null</code> is returned.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_SetAllAllowed_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Uses cached data from last response.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_CreateAllAsync_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.CreateAllAsync*"></a>
+
+  <h3 id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_CreateAllAsync_System_Collections_Generic_IEnumerable__0__System_Threading_CancellationToken_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.CreateAllAsync(System.Collections.Generic.IEnumerable{`0},System.Threading.CancellationToken)">
+  CreateAllAsync(IEnumerable&lt;TEntity&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest/Endpoints/Generic/ICollectionEndpoint.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds (or updates) multiple entities as elements in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task CreateAllAsync(IEnumerable&lt;TEntity&gt; entities, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TEntity&gt;</dt>
+    <dd><p>The entities to create or modify.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Used to cancel the request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_CreateAllAsync_System_Collections_Generic_IEnumerable__0__System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Uses a link with the relation type <code>bulk</code> to determine the URI to POST to. Defaults to the relative URI <code>bulk</code>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.invaliddataexception">InvalidDataException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-badrequest">BadRequest</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.authentication.authenticationexception">AuthenticationException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-unauthorized">Unauthorized</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-forbidden">Forbidden</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-conflict">Conflict</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
+    <dd><p>Other non-success status code.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_CreateAsync_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.CreateAsync*"></a>
+
+  <h3 id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_CreateAsync__0_System_Threading_CancellationToken_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.CreateAsync(`0,System.Threading.CancellationToken)">
+  CreateAsync(TEntity, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest/Endpoints/Generic/ICollectionEndpoint.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a entity as a new element to the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITask&lt;out TElementEndpoint?&gt; CreateAsync(TEntity entity, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <span class="xref">TEntity</span></dt>
+    <dd><p>The new entity.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Used to cancel the request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ITask</span>&lt;TElementEndpoint&gt;</dt>
+    <dd><p>An endpoint for the newly created entity; <code>null</code> if the server returned neither a &quot;Location&quot; header nor an entity with an ID in the response body.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.invaliddataexception">InvalidDataException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-badrequest">BadRequest</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.authentication.authenticationexception">AuthenticationException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-unauthorized">Unauthorized</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-forbidden">Forbidden</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-conflict">Conflict</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
+    <dd><p>Other non-success status code.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_ReadAllAsync_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.ReadAllAsync*"></a>
+
+  <h3 id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_ReadAllAsync_System_Threading_CancellationToken_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.ReadAllAsync(System.Threading.CancellationToken)">
+  ReadAllAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest/Endpoints/Generic/ICollectionEndpoint.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns all entities in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;TEntity&gt;&gt; ReadAllAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Used to cancel the request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;TEntity&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.authentication.authenticationexception">AuthenticationException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-unauthorized">Unauthorized</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-forbidden">Forbidden</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-notfound">NotFound</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-gone">Gone</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
+    <dd><p>Other non-success status code.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_ReadRangeAsync_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.ReadRangeAsync*"></a>
+
+  <h3 id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_ReadRangeAsync_System_Net_Http_Headers_RangeItemHeaderValue_System_Threading_CancellationToken_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.ReadRangeAsync(System.Net.Http.Headers.RangeItemHeaderValue,System.Threading.CancellationToken)">
+  ReadRangeAsync(RangeItemHeaderValue, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest/Endpoints/Generic/ICollectionEndpoint.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns all entities within a specific range of the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PartialResponse&lt;TEntity&gt;&gt; ReadRangeAsync(RangeItemHeaderValue range, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>range</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.headers.rangeitemheadervalue">RangeItemHeaderValue</a></dt>
+    <dd><p>The range of entities to retrieve.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Used to cancel the request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="TypedRest.Http.PartialResponse-1.html">PartialResponse</a>&lt;TEntity&gt;&gt;</dt>
+    <dd><p>A subset of the entities and the range they come from. May not exactly match the request <code class="paramref">range</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.authentication.authenticationexception">AuthenticationException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-unauthorized">Unauthorized</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-forbidden">Forbidden</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-notfound">NotFound</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-gone">Gone</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>The requested range is not satisfiable.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
+    <dd><p>Other non-success status code.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_SetAllAsync_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.SetAllAsync*"></a>
+
+  <h3 id="TypedRest_Endpoints_Generic_ICollectionEndpoint_2_SetAllAsync_System_Collections_Generic_IEnumerable__0__System_Threading_CancellationToken_" data-uid="TypedRest.Endpoints.Generic.ICollectionEndpoint`2.SetAllAsync(System.Collections.Generic.IEnumerable{`0},System.Threading.CancellationToken)">
+  SetAllAsync(IEnumerable&lt;TEntity&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest/Endpoints/Generic/ICollectionEndpoint.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Replaces the entire content of the collection with new entities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetAllAsync(IEnumerable&lt;TEntity&gt; entities, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TEntity&gt;</dt>
+    <dd><p>The new set of entities the collection shall contain.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Used to cancel the request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.invaliddataexception">InvalidDataException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-badrequest">BadRequest</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.authentication.authenticationexception">AuthenticationException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-unauthorized">Unauthorized</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode#system-net-httpstatuscode-forbidden">Forbidden</a></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>The entities have changed since they were last retrieved with <a class="xref" href="TypedRest.Endpoints.Generic.ICollectionEndpoint-2.html#TypedRest_Endpoints_Generic_ICollectionEndpoint_2_ReadAllAsync_System_Threading_CancellationToken_">ReadAllAsync(CancellationToken)</a>. Your changes were rejected to prevent a lost update.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
+    <dd><p>Other non-success status code.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/TypedRest/TypedRest-DotNet/blob/1.6.0/src/TypedRest/Endpoints/Generic/ICollectionEndpoint.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright Bastian Eicher
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

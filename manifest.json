@@ -1,0 +1,1155 @@
+{
+  "source_base_path": "/home/runner/work/TypedRest-DotNet/TypedRest-DotNet/doc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.ActivityExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.ActivityExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.ArrayExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.ArrayExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.CliEndpointProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.CliEndpointProvider-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.EndpointCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.EndpointCommand-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.EntryCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.EntryCommand-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Generic.CollectionCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Generic.CollectionCommand-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Generic.CollectionCommand-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Generic.CollectionCommand-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Generic.CollectionCommand-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Generic.CollectionCommand-4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Generic.ElementCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Generic.ElementCommand-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Generic.IndexerCommand-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Generic.IndexerCommand-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Generic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Generic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.IEndpointCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.IEndpointCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Raw.BlobCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Raw.BlobCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Raw.UploadCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Raw.UploadCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Raw.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Raw.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Reactive.PollingCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Reactive.PollingCommand-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Reactive.StreamingCollectionCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Reactive.StreamingCollectionCommand-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Reactive.StreamingCollectionCommand-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Reactive.StreamingCollectionCommand-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Reactive.StreamingCollectionCommand-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Reactive.StreamingCollectionCommand-4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Reactive.StreamingCommand-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Reactive.StreamingCommand-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Reactive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Reactive.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Rpc.ActionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Rpc.ActionCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Rpc.ConsumerCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Rpc.ConsumerCommand-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Rpc.FunctionCommand-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Rpc.FunctionCommand-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Rpc.ProducerCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Rpc.ProducerCommand-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.Rpc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.Rpc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Commands.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.EndpointProviderBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.EndpointProviderBase-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.Executor-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.Executor-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.IEndpointProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.IEndpointProvider-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.IO.IConsole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.IO.IConsole.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.IO.JsonConsole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.IO.JsonConsole.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.IO.StreamPrinter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.IO.StreamPrinter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.IO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.CommandLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.CommandLine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.EndpointBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.EndpointBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.EntryEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.EntryEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Generic.CachingEndpointBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Generic.CachingEndpointBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Generic.CollectionEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Generic.CollectionEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Generic.CollectionEndpoint-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Generic.CollectionEndpoint-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Generic.CollectionEndpointExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Generic.CollectionEndpointExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Generic.ElementEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Generic.ElementEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Generic.ICollectionEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Generic.ICollectionEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Generic.ICollectionEndpoint-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Generic.ICollectionEndpoint-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Generic.IElementEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Generic.IElementEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Generic.IElementEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Generic.IElementEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Generic.IIndexerEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Generic.IIndexerEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Generic.IndexerEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Generic.IndexerEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Generic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Generic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.ICachingEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.ICachingEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.IEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.IEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Raw.BlobEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Raw.BlobEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Raw.BlobEndpointExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Raw.BlobEndpointExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Raw.IBlobEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Raw.IBlobEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Raw.IUploadEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Raw.IUploadEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Raw.UploadEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Raw.UploadEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Raw.UploadEndpointExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Raw.UploadEndpointExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Raw.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Raw.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Reactive.IPollingEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Reactive.IPollingEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Reactive.IStreamingCollectionEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Reactive.IStreamingCollectionEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Reactive.IStreamingCollectionEndpoint-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Reactive.IStreamingCollectionEndpoint-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Reactive.IStreamingEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Reactive.IStreamingEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Reactive.PollingEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Reactive.PollingEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Reactive.StreamingCollectionEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Reactive.StreamingCollectionEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Reactive.StreamingCollectionEndpoint-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Reactive.StreamingCollectionEndpoint-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Reactive.StreamingEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Reactive.StreamingEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Reactive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Reactive.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Rpc.ActionEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Rpc.ActionEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Rpc.ConsumerEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Rpc.ConsumerEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Rpc.FunctionEndpoint-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Rpc.FunctionEndpoint-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Rpc.IActionEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Rpc.IActionEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Rpc.IConsumerEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Rpc.IConsumerEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Rpc.IFunctionEndpoint-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Rpc.IFunctionEndpoint-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Rpc.IProducerEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Rpc.IProducerEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Rpc.IRpcEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Rpc.IRpcEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Rpc.ProducerEndpoint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Rpc.ProducerEndpoint-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Rpc.RpcEndpointBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Rpc.RpcEndpointBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.Rpc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.Rpc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Endpoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Endpoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Errors.DefaultErrorHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Errors.DefaultErrorHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Errors.IErrorHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Errors.IErrorHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Errors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Errors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.ExceptionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.ExceptionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Http.HttpClientExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Http.HttpClientExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Http.HttpContentExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Http.HttpContentExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Http.HttpEntityStream-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Http.HttpEntityStream-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Http.HttpMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Http.HttpMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Http.PartialResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Http.PartialResponse-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Http.ResponseCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Http.ResponseCache.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Http.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Http.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Links.AggregateLinkExtractor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Links.AggregateLinkExtractor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Links.HalLinkExtractor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Links.HalLinkExtractor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Links.HeaderLinkExtractor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Links.HeaderLinkExtractor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Links.ILinkExtractor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Links.ILinkExtractor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Links.Link.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Links.Link.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Links.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Links.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.OAuth.HttpClientBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.OAuth.HttpClientBuilderExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.OAuth.OAuthHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.OAuth.OAuthHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.OAuth.OAuthOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.OAuth.OAuthOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.OAuth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.OAuth.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Serializers.BsonSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Serializers.BsonSerializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Serializers.NewtonsoftJsonSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Serializers.NewtonsoftJsonSerializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Serializers.SystemTextJsonSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Serializers.SystemTextJsonSerializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Serializers.XmlSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Serializers.XmlSerializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.Serializers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.Serializers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.TaskExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.TaskExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.TypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.TypeExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.UriExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.UriExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TypedRest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TypedRest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
